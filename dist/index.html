@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThreeJS Starter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="https://threejs.org/build/three.js"></script> 
+  <script src="script.js"></script>
+  <div class="container">
+    <canvas class="webgl">
+    </canvas>
+  </div>
+
+  <div class="title-planet">
+    <div class="window-size-container">
+      <div class="title">
+        <h1>denver stewart</h1>
+        <a id="scroll-to-bottom"><svg xmlns="http://www.w3.org/2000/svg" class="next" width="65" height="65" viewBox="0 0 65 65">
+          <g id="grow-button" transform="translate(-192 -464)">
+            <g id="Polygon_1" data-name="Polygon 1" transform="translate(239.402 481.5) rotate(90)" fill="none">
+              <path d="M 26.32957077026367 21.75000190734863 L 3.670430898666382 21.75000190734863 C 3.41205096244812 21.75000190734863 3.284451007843018 21.58663177490234 3.231380939483643 21.48924255371094 C 3.17832088470459 21.3918514251709 3.11021089553833 21.19605255126953 3.250290870666504 20.97893142700195 L 14.5798511505127 3.418112277984619 C 14.70836067199707 3.218912124633789 14.89824104309082 3.189172267913818 15.00000095367432 3.189172267913818 C 15.10175132751465 3.189172267913818 15.29163074493408 3.218912124633789 15.42014122009277 3.418112277984619 L 26.74972152709961 20.97893142700195 C 26.88979148864746 21.19605255126953 26.82168006896973 21.3918514251709 26.76862144470215 21.48924255371094 C 26.71555137634277 21.58663177490234 26.58795166015625 21.75000190734863 26.32957077026367 21.75000190734863 Z" stroke="none"/>
+              <path d="M 15.00000095367432 5.53376579284668 L 5.505641937255859 20.25000190734863 L 24.49435424804688 20.25000190734863 L 15.00000095367432 5.53376579284668 M 14.99999713897705 1.689172744750977 C 15.64335823059082 1.689172744750977 16.28672027587891 1.994422912597656 16.68059158325195 2.604921340942383 L 28.01016044616699 20.16574287414551 C 28.8687801361084 21.49661254882812 27.91337013244629 23.25000190734863 26.32957077026367 23.25000190734863 L 3.670431137084961 23.25000190734863 C 2.086631774902344 23.25000190734863 1.131221771240234 21.49661254882812 1.989841461181641 20.16574287414551 L 13.31941032409668 2.604921340942383 C 13.71327590942383 1.994422912597656 14.35663604736328 1.689172744750977 14.99999713897705 1.689172744750977 Z" stroke="none" fill="#fff"/>
+            </g>
+            <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(192 464)" fill="none" stroke="#fff" stroke-width="2">
+              <circle cx="32.5" cy="32.5" r="32.5" stroke="none"/>
+              <circle cx="32.5" cy="32.5" r="31" fill="none"/>
+            </g>
+          </g>
+        </svg></a>
+      </div>
+      <div class="headline">
+        <p>designing beautiful websites with the future in mind</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-me-one" id="bottom">
+    <div class="about-me-title">
+      <h1>what I do</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, unde molestiae. Explicabo quos voluptate sint repudiandae pariatur laborum rem nihil tempore quisquam cupiditate.</p>
+      <a id="scroll-to-bottom2"><svg xmlns="http://www.w3.org/2000/svg" class="next2" width="65" height="65" viewBox="0 0 65 65">
+        <g id="grow-button" transform="translate(-192 -464)">
+          <g id="Polygon_1" data-name="Polygon 1" transform="translate(239.402 481.5) rotate(90)" fill="none">
+            <path d="M 26.32957077026367 21.75000190734863 L 3.670430898666382 21.75000190734863 C 3.41205096244812 21.75000190734863 3.284451007843018 21.58663177490234 3.231380939483643 21.48924255371094 C 3.17832088470459 21.3918514251709 3.11021089553833 21.19605255126953 3.250290870666504 20.97893142700195 L 14.5798511505127 3.418112277984619 C 14.70836067199707 3.218912124633789 14.89824104309082 3.189172267913818 15.00000095367432 3.189172267913818 C 15.10175132751465 3.189172267913818 15.29163074493408 3.218912124633789 15.42014122009277 3.418112277984619 L 26.74972152709961 20.97893142700195 C 26.88979148864746 21.19605255126953 26.82168006896973 21.3918514251709 26.76862144470215 21.48924255371094 C 26.71555137634277 21.58663177490234 26.58795166015625 21.75000190734863 26.32957077026367 21.75000190734863 Z" stroke="none"/>
+            <path d="M 15.00000095367432 5.53376579284668 L 5.505641937255859 20.25000190734863 L 24.49435424804688 20.25000190734863 L 15.00000095367432 5.53376579284668 M 14.99999713897705 1.689172744750977 C 15.64335823059082 1.689172744750977 16.28672027587891 1.994422912597656 16.68059158325195 2.604921340942383 L 28.01016044616699 20.16574287414551 C 28.8687801361084 21.49661254882812 27.91337013244629 23.25000190734863 26.32957077026367 23.25000190734863 L 3.670431137084961 23.25000190734863 C 2.086631774902344 23.25000190734863 1.131221771240234 21.49661254882812 1.989841461181641 20.16574287414551 L 13.31941032409668 2.604921340942383 C 13.71327590942383 1.994422912597656 14.35663604736328 1.689172744750977 14.99999713897705 1.689172744750977 Z" stroke="none" fill="#fff"/>
+          </g>
+          <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(192 464)" fill="none" stroke="#fff" stroke-width="2">
+            <circle cx="32.5" cy="32.5" r="32.5" stroke="none"/>
+            <circle cx="32.5" cy="32.5" r="31" fill="none"/>
+          </g>
+        </g>
+      </svg></a>
+    </div>
+  </div>
+  <div class="about-me-two" id="bottom2">
+    <div class="about-me-title2">
+      <h1>how I do it</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, unde molestiae. Explicabo quos voluptate sint repudiandae pariatur laborum rem nihil tempore quisquam cupiditate.</p>
+      <a id="scroll-to-bottom3"><svg xmlns="http://www.w3.org/2000/svg" class="next3" width="65" height="65" viewBox="0 0 65 65">
+        <g id="grow-button" transform="translate(-192 -464)">
+          <g id="Polygon_1" data-name="Polygon 1" transform="translate(239.402 481.5) rotate(90)" fill="none">
+            <path d="M 26.32957077026367 21.75000190734863 L 3.670430898666382 21.75000190734863 C 3.41205096244812 21.75000190734863 3.284451007843018 21.58663177490234 3.231380939483643 21.48924255371094 C 3.17832088470459 21.3918514251709 3.11021089553833 21.19605255126953 3.250290870666504 20.97893142700195 L 14.5798511505127 3.418112277984619 C 14.70836067199707 3.218912124633789 14.89824104309082 3.189172267913818 15.00000095367432 3.189172267913818 C 15.10175132751465 3.189172267913818 15.29163074493408 3.218912124633789 15.42014122009277 3.418112277984619 L 26.74972152709961 20.97893142700195 C 26.88979148864746 21.19605255126953 26.82168006896973 21.3918514251709 26.76862144470215 21.48924255371094 C 26.71555137634277 21.58663177490234 26.58795166015625 21.75000190734863 26.32957077026367 21.75000190734863 Z" stroke="none"/>
+            <path d="M 15.00000095367432 5.53376579284668 L 5.505641937255859 20.25000190734863 L 24.49435424804688 20.25000190734863 L 15.00000095367432 5.53376579284668 M 14.99999713897705 1.689172744750977 C 15.64335823059082 1.689172744750977 16.28672027587891 1.994422912597656 16.68059158325195 2.604921340942383 L 28.01016044616699 20.16574287414551 C 28.8687801361084 21.49661254882812 27.91337013244629 23.25000190734863 26.32957077026367 23.25000190734863 L 3.670431137084961 23.25000190734863 C 2.086631774902344 23.25000190734863 1.131221771240234 21.49661254882812 1.989841461181641 20.16574287414551 L 13.31941032409668 2.604921340942383 C 13.71327590942383 1.994422912597656 14.35663604736328 1.689172744750977 14.99999713897705 1.689172744750977 Z" stroke="none" fill="#fff"/>
+          </g>
+          <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(192 464)" fill="none" stroke="#fff" stroke-width="2">
+            <circle cx="32.5" cy="32.5" r="32.5" stroke="none"/>
+            <circle cx="32.5" cy="32.5" r="31" fill="none"/>
+          </g>
+        </g>
+      </svg></a>
+    </div>
+  </div>
+  <div class="skills" id="bottom3">
+    <div class="skills-title">
+      <h1>my skills</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis inventore earum accusantium aspernatur quos perspiciatis numquam quas expedita repellendus soluta?</p>
+      <a id="scroll-to-bottom4"><svg xmlns="http://www.w3.org/2000/svg" class="next3" width="65" height="65" viewBox="0 0 65 65">
+        <g id="grow-button" transform="translate(-192 -464)">
+          <g id="Polygon_1" data-name="Polygon 1" transform="translate(239.402 481.5) rotate(90)" fill="none">
+            <path d="M 26.32957077026367 21.75000190734863 L 3.670430898666382 21.75000190734863 C 3.41205096244812 21.75000190734863 3.284451007843018 21.58663177490234 3.231380939483643 21.48924255371094 C 3.17832088470459 21.3918514251709 3.11021089553833 21.19605255126953 3.250290870666504 20.97893142700195 L 14.5798511505127 3.418112277984619 C 14.70836067199707 3.218912124633789 14.89824104309082 3.189172267913818 15.00000095367432 3.189172267913818 C 15.10175132751465 3.189172267913818 15.29163074493408 3.218912124633789 15.42014122009277 3.418112277984619 L 26.74972152709961 20.97893142700195 C 26.88979148864746 21.19605255126953 26.82168006896973 21.3918514251709 26.76862144470215 21.48924255371094 C 26.71555137634277 21.58663177490234 26.58795166015625 21.75000190734863 26.32957077026367 21.75000190734863 Z" stroke="none"/>
+            <path d="M 15.00000095367432 5.53376579284668 L 5.505641937255859 20.25000190734863 L 24.49435424804688 20.25000190734863 L 15.00000095367432 5.53376579284668 M 14.99999713897705 1.689172744750977 C 15.64335823059082 1.689172744750977 16.28672027587891 1.994422912597656 16.68059158325195 2.604921340942383 L 28.01016044616699 20.16574287414551 C 28.8687801361084 21.49661254882812 27.91337013244629 23.25000190734863 26.32957077026367 23.25000190734863 L 3.670431137084961 23.25000190734863 C 2.086631774902344 23.25000190734863 1.131221771240234 21.49661254882812 1.989841461181641 20.16574287414551 L 13.31941032409668 2.604921340942383 C 13.71327590942383 1.994422912597656 14.35663604736328 1.689172744750977 14.99999713897705 1.689172744750977 Z" stroke="none" fill="#fff"/>
+          </g>
+          <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(192 464)" fill="none" stroke="#fff" stroke-width="2">
+            <circle cx="32.5" cy="32.5" r="32.5" stroke="none"/>
+            <circle cx="32.5" cy="32.5" r="31" fill="none"/>
+          </g>
+        </g>
+      </svg></a>
+    </div>
+  </div>
+  <div class="contact-me" id="bottom4">
+    <div class="window-size-container">
+      <div class="hire-me-title">
+        <h1>like what you see?</h1>
+      </div>
+      <div class="hire-me-button-container">
+        <button class="hire-me-btn"><p>HIRE ME</p></button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="script.js"></script>
+
+<script>
+
+  var lastScrollTop = 0
+  var sectionIndex = 0;
+  var movingToSection = false;
+
+  let scrollToBot1 = document.querySelector("#scroll-to-bottom")
+  let bot1 = document.querySelector("#bottom")
+  let scrollToBot2 = document.querySelector("#scroll-to-bottom2")
+  let bot2 = document.querySelector("#bottom2")
+  let scrollToBot3 = document.querySelector("#scroll-to-bottom3")
+  let bot3 = document.querySelector("#bottom3")
+  let scrollToBot4 = document.querySelector("#scroll-to-bottom4")
+  let bot4 = document.querySelector("#bottom4")
+
+  function goToSection()
+  {
+    if(sectionIndex == 0)
+    {
+      //code
+    }
+    else if(sectionIndex == 1)
+    {
+      bot1.scrollIntoView()
+      console.log('working')
+    }
+    else if(sectionIndex == 2)
+    {
+      bot2.scrollIntoView()
+    }
+    else if(sectionIndex == 3)
+    {
+      bot3.scrollIntoView()
+    }
+    else if(sectionIndex == 4)
+    {
+      bot4.scrollIntoView()
+    }
+  }
+
+  window.addEventListener("scroll", function()
+  {
+    if(movingToSection == false)
+    {
+      var st = window.scrollY;
+      if (st > lastScrollTop)
+      {
+        movingToSection = true;
+        sectionIndex++;
+        goToSection();
+      }
+      else if(st < lastScrollTop)
+      {
+        movingToSection = true;
+        sectionIndex--;
+        goToSection();
+      }
+      lastScrollTop = st;
+    }
+  })
+
+  scrollToBot1.addEventListener("click", function()
+  {
+    bot1.scrollIntoView()
+  })
+  
+  scrollToBot2.addEventListener("click", function()
+  {
+    bot2.scrollIntoView()
+  })
+
+  scrollToBot3.addEventListener("click", function()
+  {
+    bot3.scrollIntoView()
+  })
+
+  scrollToBot4.addEventListener("click", function()
+  {
+    bot4.scrollIntoView()
+  })
+
+function divCheck()
+{
+
+}
+</script>

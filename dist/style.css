@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    scroll-behavior: smooth;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    height: 100vh;
+    font-family: 'Poppins';
+    color:white;
+}
+
+.container
+{
+    width:100%;
+    height:100%;
+    position: fixed;
+}
+
+.webgl
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: 0;
+    mix-blend-mode: exclusion;
+}
+.title-planet
+{
+    position:relative;
+    color: white;
+    display: block;
+    margin:auto;
+    text-align: center;
+    width:100%;
+    height:1800px;
+}
+.about-me-one
+{
+    width:100%;
+    height:3000px;
+}
+.about-me-two
+{
+    width:100%;
+    height:1500px;
+}
+
+.skills
+{
+    mix-blend-mode: exclusion;
+    margin:auto;
+    width:100%;
+    height: 7000px;
+    color:white;
+    text-align: center;
+}
+.contact-me
+{
+    width:100%;
+    height:100px;
+}
+.skills-title
+{
+    position: relative;
+    height:100vh;
+    width:100%;
+    margin: auto;
+    text-align: center;
+}
+.skills-title h1
+{
+    position: relative;
+    top:0;
+    padding-top: 5em;
+}
+.skills-title p
+{
+    margin:auto;
+    width:50%;
+    position:relative;
+    padding-top: 16em;
+}
+
+.window-size-container
+{
+    position:absolute;
+    text-align: center;
+    height:100vh;
+    width:100%;
+}
+.title
+{
+    padding-left: 2em;
+    position:absolute;
+    top:43%;
+    left:0;
+}
+.headline
+{
+    padding-right: 2em;
+    font-weight: 100;
+    position: absolute;
+    right:0;
+    top:45%;
+    width: 30%;
+}
+
+.next
+{
+    padding-top: .5em;
+    opacity: 50%;
+}
+
+.about-me-title,.about-me-title2
+{
+    position: relative;
+    color:white;
+    margin: auto;
+    float: right;
+    text-align: right;
+    width:40%;
+    padding: 3.5em 5em;
+}
+.about-me-title
+{
+    float:left;
+    text-align: left;
+}
+
+h1
+{
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+
+p, button
+{
+    letter-spacing: 5px;
+    font-size: small;
+    font-weight: 100;
+    line-height: 40px;
+}
+.about-me-title p,.about-me-title2 p
+{
+    padding-top: 2em;
+}
+.next2, .next3
+{
+    position: relative;
+    opacity: 50%;
+    margin-top: 2em;
+}
+.next2:hover,.next:hover,.next3:hover
+{
+    opacity: 100;
+}
+
+
+.hire-me-title
+{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    top: 0;
+    margin-top: 5em;
+}
+.hire-me-button-container
+{
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    margin-bottom: 4em;
+}
+.hire-me-btn
+{
+    width: 200px;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1em;
+    box-shadow: inset 0 0 0 0 white;
+    transition: ease-out 0.3s;
+}
+.hire-me-btn:hover
+{
+    box-shadow: inset 200px 0 0 0 white;
+    color: black;
+}
+
+
+
+/* .btn
+{
+    position: absolute;
+    top:0;
+    background-color: blue;
+    margin: auto;
+    width:50px;
+    height:50px;
+} */
+
+
+@media only screen and (max-width:700px)
+{
+    
+    .next
+    {
+        padding-top: 0em;
+        width: 50px;
+    }
+    h1
+    {
+        font-size: 30px;
+    }
+    .window-size-container
+    {
+        position:absolute;
+        text-align: center;
+        height:100vh;
+        width:100%;
+        display: flex;
+    }
+    .title
+    {
+        padding: 1.5em 0;
+        width:100%;
+        top:0;
+    }
+    .headline
+    {
+        font-weight: 100;
+        position: relative;
+        padding: 0em 0em 5em 0em;
+        margin:auto;
+        width: 80%;
+    }
+    .about-me-title,.about-me-title2
+    {
+        position: relative;
+        color:white;
+        margin: auto;
+        text-align: center;
+        float:unset;
+        padding:5em 0;
+        width:90%;
+    }
+    .skills-title p
+    {
+        margin:auto;
+        width:90%;
+        position:relative;
+        padding-top: 16em;
+    }
+}
