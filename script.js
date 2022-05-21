@@ -2,15 +2,15 @@ import * as THREE from 'http://unpkg.com/three@0.127.0/build/three.module.js'
 
 // Loading
 const textureLoader = new THREE.TextureLoader()
-const normalTexture = textureLoader.load('/rocky2.png')
-const terrainTexture = textureLoader.load('/mountain.jpg')
-const terrainHeight = textureLoader.load('/displacement.png')
-const terrainAlpha = textureLoader.load('/alphamap.png')
-const sunTexture = textureLoader.load('/sun-texture.jpeg')
-const htmlTexture = textureLoader.load('/htmlTextTexture.png')
-const cssTexture = textureLoader.load('/cssTexture.png')
-const jsTexture = textureLoader.load('/jsTexture.png')
-const threejsTexture = textureLoader.load('/threejsTexture.png')
+const normalTexture = textureLoader.load('static/rocky2.png')
+const terrainTexture = textureLoader.load('static/mountain.jpg')
+const terrainHeight = textureLoader.load('static/displacement.png')
+const terrainAlpha = textureLoader.load('static/alphamap.png')
+const sunTexture = textureLoader.load('static/sun-texture.jpeg')
+const htmlTexture = textureLoader.load('static/htmlTextTexture.png')
+const cssTexture = textureLoader.load('static/cssTexture.png')
+const jsTexture = textureLoader.load('static/jsTexture.png')
+const threejsTexture = textureLoader.load('static/threejsTexture.png')
 
 
 // Canvas
